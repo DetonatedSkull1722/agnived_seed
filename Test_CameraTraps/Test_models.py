@@ -91,7 +91,7 @@ def test_detection(device):
     results = detector.single_image_detection(TEST_IMAGE_PATH)
     
     detections_obj = results['detections'][0]
-    category_map = {0: "Animal", 1: "Person", 2: "Vehicle"}
+    category_map = {0: "Animal", 1: "Person", 2: "animal"}
     animal_detections = []
     
     print(f"Total detections: {len(detections_obj.xyxy)}\n")
